@@ -1,29 +1,31 @@
+import Nav from "./components/Nav";
+import { CustomerReviews,Footer,Hero,PopularProducts,Services,SpecialOffer,Subscribe,SuperQuality } from "./sections";
 const App = () =>(
   <main className="relative">
-    Nav
+    <Nav/>
     <section className="xl:padding-1 wide:padding-r padding-b">
-      Hero
+      <Hero/>
     </section>
     <section className="padding"> 
-      product
+      <PopularProducts/>
     </section>
     <section className="padding"> 
-      superQuality
+      <SuperQuality/>
     </section>
     <section className="padding-x py-10"> 
-      services
+      <Services/>
     </section>
     <section className="padding"> 
-      spical offer
+      <SpecialOffer/>
     </section>
     <section className="bg-pale-blue"> 
-      Customer review
+      <CustomerReviews/>
     </section>
     <section className="padding-x sm:py-32 py-16 w-full"> 
-      subscribe
+      <Subscribe/>
     </section>
     <section className="bg-black padding-x padding-t pb-8"> 
-      footer
+      <Footer/>
     </section>
   </main>
 )
